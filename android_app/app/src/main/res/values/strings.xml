@@ -1,0 +1,11 @@
+<resources>
+    <string name="tfe_od_app_name" translation_description="Object Detection demo app [CHAR_LIMIT=40]">TFL Detect</string>
+    <string name="tfe_od_camera_error" translation_description="Error regarding camera support[CHAR_LIMIT=40]">This device doesn\'t support Camera2 API.</string>
+    <!-- SRA added -->
+    <string name="image_view">Image View</string>
+    <string name="detect">Detect</string>
+    <string name="test">Test</string>
+    <string name="camera">Camera</string>
+    <string name="qtim_logo">QTIM logo</string>
+    <string name="run_model">Running...</string>
+</resources>
