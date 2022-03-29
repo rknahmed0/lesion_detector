@@ -92,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
         this.imageView.setImageBitmap(cropBitmap);
 
         final Button testButton = findViewById(R.id.testButton);
-        testButton.setText(("Sample Image 1/4"));
+        testButton.setText(("Sample Image 1/6"));
         testButton.setOnClickListener(v -> {
             trackingOverlay.setVisibility(View.INVISIBLE);
             mImageIndex = (mImageIndex + 1) % mTestImages.length;
@@ -177,9 +177,9 @@ public class MainActivity extends AppCompatActivity {
                             TF_OD_API_IS_QUANTIZED,
                             TF_OD_API_INPUT_SIZE);
             Log.d("YoloV5Classifier",  "model loaded successfully: " + TF_OD_API_MODEL_FILE); // SRA added
-            detector.useGpu(); // SRA added
+//            detector.useGpu(); // SRA added
 //            detector.useNNAPI(); // SRA added
-//            detector.setNumThreads(4); // SRA added
+            detector.setNumThreads(4); // SRA added
         } catch (final IOException e) {
             e.printStackTrace();
             LOGGER.e(e, "Exception initializing classifier!");
